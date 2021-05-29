@@ -1,0 +1,42 @@
+1- Get the different combination of gender and Start treatment Year of Patient for all
+american states for Fact patient – Total Ammount
+
+
+SELECT
+Descendants([Address Dim].[State],[Address Dim].[State]) ON COLUMNS,
+CrossJoin([Patient Dim].[Gender].children,
+[Date Dim].[Start Year].children) ON ROWS
+FROM [Hospital DWH]
+where[Measures].[Total Ammount];
+------------------------------------------------------------------
+2-Get all the citys for both florida and california for Fact Patient
+Total Ammount, Total Spend In Medicine
+
+
+SELECT
+Union (
+[Address Dim].[Hierarchy].[Country].&[United States].&[Florida].children,
+[Address Dim].[Hierarchy].[Country].&[United States].&[California].children,
+ALL) ON COLUMNS,
+ {[Measures].[Total Spend In Medicine],[Measures].[Total Ammount]} ON ROWS
+FROM [Hospital DWH];
+-----------------------------------------------------------------
+3-get the total spend money  for every doctor name
+
+
+SELECT
+{[Measures].[Total Ammount]} ON Columns,
+{Except
+([Doctor Dim].[Doctor Name].[All].Children ,
+[Doctor Dim].[Doctor Name].[All].UNKNOWNMEMBER)} ON ROWS
+FROM [Hospital DWH];
+---------------------------------------------------------------------
+4-get the total spend money in medicine for every medicine name
+
+
+SELECT
+{[Measures].[Total Spend In Medicine]} ON Columns,
+{Except
+([Medicine Dim].[Medcine Name].[All].Children ,
+[Medicine Dim].[Medcine Name].[All].UNKNOWNMEMBER)} ON ROWS
+FROM [Hospital DWH];
