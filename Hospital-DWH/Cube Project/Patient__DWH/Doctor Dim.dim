@@ -1,0 +1,240 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="89b993fe-0c2c-45a5-92ce-a435a7700924" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Doctor Dim</ID>
+  <Name>Doctor Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2277" scrolltop="-5119" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7594" y="13811" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DoctorDim" left="-33" top="-53" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DoctorDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2277</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5119</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-33</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-53</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="487f7e45-c97f-42ce-8239-9f1917548d2b">
+    <DataSourceViewID>Hospital DWH</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a888b12e-44da-4925-bdfe-9f539662b4e7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0d75dfd9-9939-4fbd-87e8-9f3e50f90b0e">
+      <ID>Doctor ID</ID>
+      <Name>Doctor ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c804d1a2-e6c1-413f-b083-fe22caa54cd3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cd92d2f-c923-47bb-8d40-375e57ef1d1f">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>DoctorID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a73c3904-ca00-46d3-9ee5-2799abf5f60e">
+          <AttributeID>Doctor Name</AttributeID>
+          <Name>Doctor Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e4267337-da26-49f1-a4e8-2643434e137d">
+          <AttributeID>E Mail</AttributeID>
+          <Name>E Mail</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e669d0ac-1560-4bda-8f33-b67dde7f2c13">
+          <AttributeID>Sex</AttributeID>
+          <Name>Sex</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0430bba4-6cd9-4f0b-8e79-831ac35eafe3">
+          <AttributeID>Street Address</AttributeID>
+          <Name>Street Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f28a5271-712d-4cf6-ba13-788201251382">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1b765929-1682-4e6f-a963-4f67bc3b1215">
+      <ID>Doctor Name</ID>
+      <Name>Doctor Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37dbeba6-51c6-426a-a42e-d4ccc59efc74">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65d47299-68ae-4066-987e-385fee59f1f2">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>DoctorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b4db0773-5a56-40de-a405-e184ff023c5b">
+      <ID>E Mail</ID>
+      <Name>E Mail</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5fcc03a1-8880-4d1b-b39e-53042c3ce9be">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89b64320-3162-4216-8eaa-ac48442a07e8">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>E_Mail</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="314bd16d-75e4-4bd6-8834-80b6cf1843b0">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce643654-417c-4f9a-838c-f9061e6a5bdd">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73f0ac23-1d93-4a4a-9ff8-7608802fede0">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66184bd5-2e9c-46f8-8b0c-f29e7d135c66">
+      <ID>Street Address</ID>
+      <Name>Street Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="485b87d3-7867-461e-b0c8-42bf09335a7d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64d6ac95-b087-4829-81a4-446878dfad84">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>StreetAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c9209bde-4ccc-4de1-82bb-a50fef05d8a5">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70ceadae-6657-4919-9856-3de845940f8c">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="356f4bf6-b05a-48a9-b33b-46a900b88740">
+            <TableID>dbo_DoctorDim</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="51087c61-fa1b-4ff7-80fc-0e466d3e53c9">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="a3fc8d5f-2e20-4863-a467-07982c6b19c8">
+          <ID>Doctor ID</ID>
+          <Name>Doctor ID</Name>
+          <SourceAttributeID>Doctor ID</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5842d8eb-09f6-429a-9266-8f2c1baf8e9f">
+          <ID>Doctor Name</ID>
+          <Name>Doctor Name</Name>
+          <SourceAttributeID>Doctor Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5ea46c15-e1c9-4d71-aa24-c407037ddd91">
+          <ID>E Mail</ID>
+          <Name>E Mail</Name>
+          <SourceAttributeID>E Mail</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1277ec50-b435-4e88-a43a-713f29945708">
+          <ID>Street Address</ID>
+          <Name>Street Address</Name>
+          <SourceAttributeID>Street Address</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e7546938-8813-4be1-bb05-a4974edd497a">
+          <ID>Sex</ID>
+          <Name>Sex</Name>
+          <SourceAttributeID>Sex</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="169e3b69-bab1-4c45-bfac-27c5a018e8bd">
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceAttributeID>City</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
